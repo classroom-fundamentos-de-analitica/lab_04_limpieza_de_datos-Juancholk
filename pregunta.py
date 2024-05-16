@@ -16,5 +16,6 @@ def clean_data():
     #
     # Inserte su código aquí
     #
-
+    df = df.drop_duplicates()
+    df = df.dropna()
     return df
